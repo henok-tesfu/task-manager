@@ -12,16 +12,17 @@ This is a simple Laravel web application for task management with the ability to
 
 - **Delete Task**: Delete tasks easily with a delete button.
 
-- **Reorder Tasks**: Drag-and-drop tasks to reorder them within a project. The priority is automatically updated based on the new order (priority #1 is at the top, #2 next down, etc.).
+- **Reorder Tasks**: Drag-and-drop tasks to reorder them within a project. The priority is automatically updated based on the new order
 
 - **Project Functionality (BONUS)**:
   - Tasks are grouped by projects.
   - Users can create new projects.
-  - Users can select a project from a dropdown to view and manage tasks       associated with that project
+  - Users can select a project from a dropdown to view and manage tasks associated with that project
 
 ## Demo
 If you'd like to see the application in action, check the demo here: <a href="https://task.henoktesfu.me/"> Demo </a>
-repository link <a href="https://task.henoktesfu.me/"> Demo </a>
+
+repository link <a href="https://github.com/henok-tesfu/task-manager"> GitHub </a>
 ## Setup Instructions
 **Prerequisites**
 
@@ -37,8 +38,8 @@ Before setting up the application, ensure you have the following installed on yo
   <li> <strong> Clone the Repository </strong> </li>
       If you're using Git to clone the repository, run:
 
-       git clone <repository-url>
-       cd task-management-app
+       git clone git@github.com:henok-tesfu/task-manager.git
+       cd task-manager
   <li> <strong> Install Composer Dependencies </strong> </li>
       Install the necessary PHP dependencies:
 
