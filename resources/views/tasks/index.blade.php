@@ -55,11 +55,14 @@
             @foreach($tasks as $task)
             <li data-id="{{ $task->id }}" class="p-3 bg-white rounded-md shadow-md flex justify-between items-center">
                 <span>{{ $task->name }}</span>
-                <form action="{{ route('tasks.destroy', $task->id) }}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="text-red-500 hover:text-red-600">Delete</button>
-                </form>
+                <div class="flex space-x-2">
+                    <a href="{{ route('tasks.edit', $task->id) }}" class="text-blue-500 hover:text-blue-600">Edit</a>
+                    <form action="{{ route('tasks.destroy', $task->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="text-red-500 hover:text-red-600">Delete</button>
+                    </form>
+                </div>
             </li>
             @endforeach
         </ul>
